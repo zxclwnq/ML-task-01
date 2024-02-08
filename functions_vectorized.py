@@ -19,7 +19,6 @@ def convert_image(img, coefs):
 
 
 def run_length_encoding(x):
-    x = np.array([2, 2, 2, 3, 3, 3, 5])
     n = len(x)
     ia = x[1:] != x[:-1]
     i = np.append(np.where(ia), n-1)
